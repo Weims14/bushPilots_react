@@ -48,8 +48,8 @@ if (Meteor.isServer) {
   //only allow 5 operation per connection per second
   DDPRateLimiter.addRule({
     name(name) {
-      retunr_.contains(PLAYER_METHODS, name);
+      return _.contains(PLAYER_METHODS, name);
     },
-    connectionId(){return true;};
+    connectionId(){return true;},
   }, 5, 1000);
 }
