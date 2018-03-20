@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 // import { Meteor } from 'meteor/meteor';
 import { Accounts } from 'meteor/accounts-base';
@@ -66,7 +66,7 @@ class ForgotPassword extends Component {
                 <button type="submit" className="btn btn-primary btn-lg btn-block login-button">Send Reset Email</button>
               </div>
               <div className="login-register">
-                <Link to='/login-form'>Login</Link>
+                <Link to='/admin'>Login</Link>
               </div>
             </form>
           </div>

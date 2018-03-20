@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, browserHistory } from 'react-router';
+import { Link, browserHistory } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
 import { Bert } from 'meteor/themeteorchef:bert';
 import { BrowserDetect } from 'meteor/awatson1978:browser-detection';
@@ -31,7 +31,7 @@ class LoginForm extends Component {
           title: 'Welcome!',
           message: 'Successfully Logged in.',
         });
-        browserHistory.push('/projects');
+        browserHistory.push('/admin');
       }
     });
   }
